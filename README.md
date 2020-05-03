@@ -4,7 +4,6 @@ Uncomment lines if you want case insensitive searching.
 Enter as administrator if you want to edit system files. After editing system files you need recompile the kernel: depmod -aeF /boot/System.map.... and update-initramfs -u
 
 #!/usr/bin/python
-#
 import sys
 import os
 import tempfile
@@ -89,10 +88,3 @@ def display_files(*files):
             source.throw(Keyboard)
             
 display_files(sys.argv[1:])
-
-
-
-
-
-
-
